@@ -56,11 +56,11 @@ Dans ce travail de maturité nous allons étudier la radiographie terrestre en u
 \textbf{\emph{Quel est le taux de rayons cosmiques en fonction de l'altitude et de la profondeur géologique ?}}
 \end{center}
 
-Les rayons cosmiques qui arrivent sur terre sous forme de particules élémentaires depuis les couches externes de l'atmosphère, traversent en certaine quantité la matière comme le font les rayons X que la médecine utilise depuis longtemps pour l'imagerie médicale. En fonction de la densité d'une matière traversée, une quantitée plus ou moins importante de particules la pénètre. En connaissant cette proprièté le comptage mesuré de particules par un détecteur permet de conclure sur la structure d'une matière positionnée entre les rayons cosmiques et celui-ci. Les rayons cosmiques nous permettent de faire une radiographie de l'espace.
+Les rayons cosmiques qui arrivent sur terre sous forme de particules élémentaires depuis les couches externes de l'atmosphère, traversent en certaine quantité la matière comme le font les rayons X que la médecine utilise depuis longtemps pour l'imagerie médicale. En fonction de la densité d'une matière traversée, une quantité plus ou moins importante de particules la pénètre. En connaissant cette propriété le comptage mesuré de particules par un détecteur permet de conclure sur la structure d'une matière positionnée entre les rayons cosmiques et celui-ci. Les rayons cosmiques nous permettent de faire une radiographie de l'espace.
 
-Ces mesures demandent une connaissance des propriètés des rayons cosmiques que j'ai acquise et que je développerai dans ce document. Il est également nécéssaire d'utiliser un détecteur à rayon cosmique que je me suis procuré et dont je décrirai le fonctionnement. Viennent par la suite les mesures effectuées dans différentes conditions pour prouver le principe et fonctionnement de ces radiographies. L'interpretation des mesures demande un formalisme statistique que je développerai également dans ce document. J'étaierai mon analyse en me référant à des travaux de profesionnels spécialisés dans ce domaine et en m'appuyant sur l'interview d'un chercheur.
+Ces mesures demandent une connaissance des propriétés des rayons cosmiques que j'ai acquise et que je développerai dans ce document. Il est également nécessaire d'utiliser un détecteur à rayon cosmique que je me suis procuré et dont je décrirai le fonctionnement. Viennent par la suite les mesures effectuées dans différentes conditions pour prouver le principe et fonctionnement de ces radiographies. L'interprétation des mesures demande un formalisme statistique que je développerai également dans ce document. J'étaierai mon analyse en me référant à des travaux de professionnels spécialisés dans ce domaine et en m'appuyant sur l'interview d'un chercheur.
 
-Pour réaliser mon travail de maturité, j'ai écrit des codes informatiques en language de programmation python pour analyser des données et dessiner des graphiques. Tous les codes sources que j'ai écrits se trouvent sur mon espace GitHub, au lien suivant: \url{https://github.com/jonashoecker/TM}. À l'exception des figures \ref{fig:Hess}, \ref{fig:verticalflux}, \ref{fig:BigVoidM} et \ref{fig:GScanPyramidsScintilator}, j'ai réalisé moi même tous les schémas et graphiques présentés dans ce document.
+Pour réaliser mon travail de maturité, j'ai écrit des codes informatiques en langage de programmation python pour analyser des données et dessiner des graphiques. Tous les codes sources que j'ai écrits se trouvent sur mon espace GitHub, au lien suivant: \url{https://github.com/jonashoecker/TM}. À l'exception des figures \ref{fig:Hess}, \ref{fig:verticalflux}, \ref{fig:BigVoidM} et \ref{fig:GScanPyramidsScintilator}, j'ai réalisé moi même tous les schémas et graphiques présentés dans ce document.
 
 
 \pagebreak
@@ -121,7 +121,7 @@ Suite à cette découverte, les scientifiques ont réussi à expliquer pourquoi 
   $p^+$ & proton &\hspace{2cm} & $\mu^-$ & muon\\[0.1cm]
   ${\rm {He}^{++}}$ & noyau d'hélium & & $\mu^+$ & antimuon\\[0.1cm]
   $\pi^+$ & pion positif & & $\nu_\mu$ & neutrino muonique\\[0.1cm]
-  $\pi^-$ & pion négatif & & ${\overline \nu}_\mu$ & neutrino antimuonique\\[0.1cm]
+  $\pi^-$ & pion négatif & & ${\overline \nu}_\mu$ & antineutrino muonique\\[0.1cm]
   $\pi^0$ & pion neutre & & $e^-$ & électron\\[0.1cm]
   $\gamma$ & photon & & $e^+$ & antiélectron (positon)\\[0.2cm]
   \hline
@@ -142,7 +142,7 @@ A quelle altitude se déroulent ces réactions et quelles sont les particules qu
 \begin{equation}
 s = \gamma c \tau\;, \label{eq:distance"s"}
 \end{equation}
-ou $c=3.0 \cdot 10^8\;$m/s est la vitesse de la lumière, $\tau=2.6 \cdot 10^{-8}\;$s la durée de vie moyenne d'un pion,\footnote{M. Tanabashi, Leptons, \url{http://pdg.lbl.gov/2018/tables/rpp2018-sum-leptons.pdf}, consulté le 5 Avril 2020.} et $\gamma = p / m$ le facteur de Lorentz, ou $p$ est l'impulsion du pion et $m = 140$$\;$MeV$/c^2$, sa masse.\footnote{\emph{id.}} L'unité MeV signifie mega électron-volt, c'est-à-dire $10^6$ électron-volt. Un électron-volt correspond à « l'énergie acquise par un électron soumis à un potentiel électrique de 1 Volt ».\footnote{\url{https://www.futura-sciences.com/sciences/definitions/physique-electron-volt-338/}, consulté le 11 Septembre 2020.} Un pion avec une impulsion de $10\;$GeV/$c$ parcourt une distance de 560$\;$m avant sa désintégration. Les pions ne peuvent donc pas être la source du rayonnement observé au niveau de la mer. 
+ou $c=3.0 \cdot 10^8\;$m/s est la vitesse de la lumière, $\tau=2.6 \cdot 10^{-8}\;$s la durée de vie moyenne d'un pion,\footnote{M. Tanabashi, Leptons, \url{http://pdg.lbl.gov/2018/tables/rpp2018-sum-leptons.pdf}, consulté le 5 Avril 2020.} et $\gamma = p / m$ le facteur de Lorentz, ou $p$ est l'impulsion du pion et $m = 140\;$MeV$/c^2$, sa masse.\footnote{\emph{id.}} L'unité MeV signifie mega électron-volt, c'est-à-dire $10^6$ électron-volt. Un électron-volt correspond à « l'énergie acquise par un électron soumis à un potentiel électrique de 1 Volt ».\footnote{\url{https://www.futura-sciences.com/sciences/definitions/physique-electron-volt-338/}, consulté le 11 Septembre 2020.} Un pion avec une impulsion de $10\;$GeV/$c$ parcourt une distance de 560$\;$m avant sa désintégration. Les pions ne peuvent donc pas être la source du rayonnement observé au niveau de la mer. 
 
 Les muons provenant des désintégrations de pions se désintègrent à leur tour\footnote{Spencer N. Axani, The Physics Paper, \url{https://github.com/spenceraxani/CosmicWatch-Desktop-Muon-Detector-v2/blob/master/ThePhysicsPaper.pdf}, consulté le 2 Mars 2020.} :
 \begin{eqnarray}
@@ -157,9 +157,9 @@ p_{\rm min} = \frac{s_{\rm mer}m}{c\tau}\;,
 \end{equation}
 ou $s_{\rm mer}=15\;{\rm km}$ est la distance de vol du muon à un angle d'incidence zéro par rapport à la surface terrestre. Nous en concluons que l'impulsion d'un muon doit être supérieure à environ $2.4\;{\rm GeV}/c$ pour atteindre la surface terrestre avec une durée de vie moyenne. 
 
-Dans les formules \ref{eq:distance"s"} et \ref{eq:momentum} nous supposions que la vitesse des particules (avec une impulsion d'au moins $1\;{\rm GeV}/c$) soit très proche voire égale à la vitesse de la lumière $c$. La démonstration de cette affirmation se trouve dans l'annexe \ref{annexe 1}. 
+Dans les formules \ref{eq:distance"s"} et \ref{eq:momentum} nous supposions que la vitesse des particules (avec une impulsion d'au moins $1\;{\rm GeV}/c$) soit très proche voire égale à la vitesse de la lumière $c$. La démonstration de cette affirmation se trouve dans l'annexe~\ref{annexe 1}. 
 
-Nous constatons par ailleurs que sans le facteur de Lorentz, la distance parcourue d'un muon moyen d'une impulsion de $6$$\;$GeV/$c$ ne serait seulement que de 0.7$\;$km ! Le facteur de Lorentz est un paramètre clé dans la dilatation du temps (effet relativiste), dont l'explication se trouve dans l'annexe~\ref{annexes 2}.
+Nous constatons par ailleurs que sans le facteur de Lorentz, la distance parcourue d'un muon moyen d'une impulsion de $6\;$GeV/$c$ ne serait seulement que de 0.7$\;$km ! Le facteur de Lorentz est un paramètre clé dans la dilatation du temps (effet relativiste), dont l'explication se trouve dans l'annexe~\ref{annexes 2}.
 
 Jusqu'ici nous avons toujours utilisé la durée de vie moyenne d'une particule. En réalité la probabilité de survie d'une particule à un temps $t$ suit une fonction exponentielle\footnote{\url{https://quarknet.fnal.gov/archive/run2/liferev.shtml}, consulté le 25 Août 2020.} : 
 \begin{equation}
@@ -195,7 +195,7 @@ Nous montrons sur la figure \ref{fig:verticalflux} un graphique qui résume la d
 \caption{\label{fig:ionisation} Schéma représentant le principe d'ionisation (à gauche) et celui d'excitation (à droite).}
 \end{center}
 \end{figure}
-La formule de Bethe est une équation très importante pour mon travail de maturité. Elle décrit « le taux moyen de perte d'énergie des particules lourdes chargées ».\footnote{D.E. Groom \emph{et al.}, Passage of Particle Through Matter, \url{http://pdg.lbl.gov/2019/reviews/rpp2018-rev-passage-particles-matter.pdf}, consulté le 15 Mai 2020. Traduit de l'anglais.} Avec cette formule, nous allons pouvoir calculer la probabilité d'absorption des muons qui traversent une certaine matière.
+La formule de Bethe est une équation très importante pour mon travail de maturité. Elle décrit « le taux moyen de perte d'énergie des particules lourdes chargées ».\footnote{D.E. Groom \emph{et al.}, Passage of Particles Through Matter, \url{http://pdg.lbl.gov/2019/reviews/rpp2018-rev-passage-particles-matter.pdf}, consulté le 15 Mai 2020. Traduit de l'anglais.} Avec cette formule, nous allons pouvoir calculer la probabilité d'absorption des muons qui traversent une certaine matière.
 
 Lorsqu'une particule traverse la matière elle va ioniser les atomes de la matière. La particule chargée traversant une matière va transférer une partie de son énergie à un électron d'un atome. Nous parlons d'ionisation quand l'électron à reçu assez d'énergie pour être libéré et d'excitation lorsque l'électron reste lié à l'atome mais change de couche atomique.\footnote{\url{https://www.iihe.ac.be/~lfavart/cours/Notes-PHYS-F305-201819-Chap5.pdf}, consulté le 29 Avril 2020.} Ce phénomène est schématisé dans la figure \ref{fig:ionisation}. L'ionisation peut être décrite par la réaction $\mu^- + A \rightarrow \mu^- + A^+ + e^- $, ou $A$ est l'atome, $\mu$ le muon qui ionise l'atome et qui libère un électron ($e^-$). Une excitation s'écrit donc : $\mu^- + A \rightarrow \mu^- + A$.
 
@@ -247,7 +247,7 @@ Nous allons par la suite appliquer la formule de Bethe à des cas de matière co
 \end{center}
 \end{figure}
 
-Nous pouvons maintenant réaliser des graphiques représentants la distance maximale parcourue d'un muon en fonction de son impulsion (toujours dans l'air puis dans la roche calcaire) toujours en utilisant l'équation de Bethe. Les graphiques obtenus sont présentés sur la figure \ref{fig:BethePoints}. Les points correspondent aux valeurs de l'axe $x$ dans la figure~\ref{fig:BetheDistribution} ou l'impulsion relative est zéro, c'est à dire, le muon est arrêté. Afin de relier les points discrets, j'ai ajusté des fonctions. Dans le cas de la roche calcaire, la dépendance est proportionnelle ce qui permet d'ajuster une droite. Par contre, dans l'air, suite à l'équation~\ref{eq:airdensityaltitude}, la dépendence suit une fonction non-linéaire. Voici les fonctions ajustées, qui sont également dessinées dans la figure~\ref{fig:BethePoints} :
+Nous pouvons maintenant réaliser des graphiques représentants la distance maximale parcourue d'un muon en fonction de son impulsion (toujours dans l'air puis dans la roche calcaire) toujours en utilisant l'équation de Bethe. Les graphiques obtenus sont présentés sur la figure \ref{fig:BethePoints}. Les points correspondent aux valeurs de l'axe $x$ dans la figure~\ref{fig:BetheDistribution} ou l'impulsion relative est zéro, c'est à dire, le muon est arrêté. Afin de relier les points discrets, j'ai ajusté des fonctions. Dans le cas de la roche calcaire, la dépendance est proportionnelle ce qui permet d'ajuster une droite. Par contre, dans l'air, suite à l'équation~\ref{eq:airdensityaltitude}, la dépendance suit une fonction non-linéaire. Voici les fonctions ajustées, qui sont également dessinées dans la figure~\ref{fig:BethePoints} :
 \begin{eqnarray}
     d_{\rm air}(p) &=& 7.8\cdot\ln(p) + 9.37~~~\;~~   {\rm (pour~l'air)} \\
     d_{\rm roche}(p) &=& 1.58\cdot p ~~~~~~~~~~~~~~~~~~  {\rm (pour~la~roche~calcaire)}
@@ -289,7 +289,7 @@ Elle exprime le nombre de muons verticaux en fonction de l'impulsion, $N(p)$, pa
 \end{center}
 \end{figure}
 
-Il est intéressant pour la suite de calculer l'intégrale de cette fonction ce qui nous indiquera la fraction de muons au dessus ou en dessous d'une certaine valeur d'impulsion. Par exemple, nous avons vu dans la figure~\ref{fig:BethePoints} que seulement les muons de plus de 6~$\rm{GeV}/c$ traversent 10~mètres de roche calcaire. En intégrant la fonction \ref{eq:Cp} entre 6 GeV et l'infini (numériquement l'intégration jusqu'à 100 GeV s'avère suffisante), nous pouvons déterminer que 12\% des muons cosmiques verticaux possèdent une impulsion supérieure ou égale à 6~$\rm{GeV}/c$.
+Il est intéressant pour la suite de calculer l'intégrale de cette fonction ce qui nous indiquera la fraction de muons au dessus ou en dessous d'une certaine valeur d'impulsion. Par exemple, nous avons vu dans la figure~\ref{fig:BethePoints} que seulement les muons de plus de 6~${\rm GeV}/c$ traversent 10~mètres de roche calcaire. En intégrant la fonction \ref{eq:Cp} entre 6 GeV et l'infini (numériquement l'intégration jusqu'à 100 GeV s'avère suffisante), nous pouvons déterminer que 12\% des muons cosmiques verticaux possèdent une impulsion supérieure ou égale à 6~${\rm GeV}/c$.
 
 \subsubsection{Prédiction de l'absorption de muons cosmiques dans la roche calcaire}
 
@@ -339,7 +339,7 @@ Les détecteurs CosmicWatch sont composés:
 
 Tout le détecteur CosmicWatch fonctionne grâce à une puce standard Arduino, c'est une puce électronique « capable de lire des entrées – la lumière sur un capteur (…) – et de le transformer en sortie – activer un moteur, allumer une LED, publier quelque chose en ligne ».\footnote{\url{https://www.arduino.cc/en/guide/introduction}, consulté le 9 Avril 2020. Traduit de l'anglais.} Cette puce électronique Arduino spécialement programmée pour les détecteurs CosmicWatch va donc traduire le signal détecté sur le SiPM et le rendre exploitable et analysable sous plusieurs formes qui seront présentées par la suite.
 
-Bien sûr, si le scintillateur n'est pas dans le noir complet toutes les données seront erronées car les photons de la lumière ambiante passeront dans le scintillateur et submergeront le faible signal des muons. C’est pour cela qu’il faut impérativement recouvrir le scintillateur d'un ruban adhésif noir afin d'empêcher totalement les photons lumineux de rentrer en contact avec le scintillateur. Ceci est présenté sur la figure \ref{fig:noir}\footnote{Spencer N. Axani, The Physics Paper, \url{https://github.com/spenceraxani/CosmicWatch-Desktop-Muon-Detector-v2/blob/master/ThePhysicsPaper.pdf}, consulté le 2 Mars 2020.}. La différence entre le taux de photons émis par le rayonnement solaire et les photons émis par les muons passant par le scintillateur sera calculée dans l'Annexe 3. 
+Bien sûr, si le scintillateur n'est pas dans le noir complet toutes les données seront erronées car les photons de la lumière ambiante passeront dans le scintillateur et submergeront le faible signal des muons. C’est pour cela qu’il faut impérativement recouvrir le scintillateur d'un ruban adhésif noir afin d'empêcher totalement les photons lumineux de rentrer en contact avec le scintillateur. Ceci est présenté sur la figure \ref{fig:noir}\footnote{Spencer N. Axani, The Physics Paper, \url{https://github.com/spenceraxani/CosmicWatch-Desktop-Muon-Detector-v2/blob/master/ThePhysicsPaper.pdf}, consulté le 2 Mars 2020.}. La différence entre le taux de photons émis par le rayonnement solaire et les photons émis par les muons passant par le scintillateur sera calculée dans l'annexe~\ref{sec:annexe-differenceinflux}. 
 
 \begin{figure}[t]
 \begin{center}
@@ -347,7 +347,6 @@ Bien sûr, si le scintillateur n'est pas dans le noir complet toutes les donnée
 \caption{\label{fig:noir} Photo représentant un scintillateur.}
 \end{center}
 \end{figure}
-
 
 La prise de données est possible grâce au programme python écrit par Spencer Axani disponible sur Github, voici le lien : \url{https://github.com/spenceraxani/CosmicWatch-Desktop-Muon-Detector-v2/blob/master/Recording_Data/import_data.py}. Les résultats sont fournis dans un fichier dans un format texte (.txt) comme indiqué sur la figure~\ref{fig:ex.mesurement}.
 
@@ -365,7 +364,7 @@ Le détecteur donne un bon nombre de différents facteurs pour chaque mesure :
   \item Le temps depuis le lancement des mesures en millisecondes ($10^{-3}$ secondes).
   \item Le comptage de l'ADC à dix bits sur l’échelle [0--1023].
   \item La tension du signal produit par le SiPM en millivolts ($10^{-3}$ volts).
-  \item Le « Deadtime » donc temps mort, après chaque mesure le détecteur ne peut pas prendre de mesures supplémentaires pendant un tout petit temps, le temps mort est mesuré en millisecondes ($10^{-3}$ secondes) et vaut 40 millisecondes par mesure en moyenne, c'est à dire 6\% pour un taux de mesures de 1.5$\;$Hz.
+  \item Le « Deadtime » donc temps mort, après chaque mesure le détecteur ne peut pas prendre de mesures supplémentaires pendant un tout petit temps, le temps mort est mesuré en millisecondes ($10^{-3}$ secondes) et vaut 40~millisecondes par mesure en moyenne, c'est à dire 6\% pour un taux de mesures de 1.5$\;$Hz.
   \item La température au moment de la détection.
 \end{itemize}
 
@@ -376,7 +375,7 @@ Malheureusement, malgré ma ténacité, je n'ai pas réussi à faire fonctionner
 
 Pour remédier à ce problème, j'ai essayé de trouver d'autres pistes. Je suis entré en contact avec une entreprise italienne basée à Viareggio en Toscane, CAEN. Cette entreprise dédiée à la recherche en physique vient d'entamer un tout nouveau programme pédagogique de réalisation de détecteurs à rayons cosmiques pour des écoles et des universités. Leurs détecteurs sont de « bonnes solution pour les étudiants n'ayant pas de connaissances techniques en instrumentation très approfondies ».\footnote{Guide PGXXXX SP5620CH, CAEN Educational.} L'entreprise a bien voulu me prêter un ensemble composé d'une unité centrale et de deux détecteurs à scintillation présenté sur la figure \ref{fig:CAENphoto}. 
 
-Selon le principe du détecteur CosmicWatch, celui-ci fonctionne également avec avec des scintillateurs comme matériel actif pour détecter les muons. Sur la figure \ref{fig:CAENphoto}, les deux plaques de scintillateur sont présentées à droite. L'unité centrale, à gauche, comporte entre autres l'électronique pour réaliser la coïncidence.
+Selon le principe du détecteur CosmicWatch, celui-ci fonctionne également avec avec des scintillateurs comme matériel actif pour détecter les muons. Sur la figure \ref{fig:CAENphoto}, les deux plaques de scintillateur, chacune d'une surface active de 15$\times$15$\;$cm$^2$ et d'une profondeur de 1$\;$cm, sont présentées à droite. L'unité centrale, à gauche, comporte entre autres l'électronique pour réaliser la coïncidence. Grâce à la plus grande surface des scintillateurs, nous pouvons attendre un taux de muons cosmiques supérieur par un facteur $15^2/5^2=9$ par rapport au détecteur CosmicWatch, ce qui réduit le temps de mesure nécessaire pour atteindre une précision statistique comparable. 
 
 \begin{figure}[t]
 \begin{center}
@@ -385,7 +384,7 @@ Selon le principe du détecteur CosmicWatch, celui-ci fonctionne également avec
 \end{center}
 \end{figure}
 
-Les résultats d'une prise de données sont fournis par l'unité centrale du détecteur CAEN sous forme de fichier {\tt *.csv}, le format de programmes tels que Excel ou Numbers. Un exemple est présenté sur la figure \ref{fig:PrisedonneeCAEN}. L'information est moins précise que celle du détecteur CosmicWatch : au lieu de rapporter chaque mesure avec ses propriétés, le détecteur CAEN n'affiche que le nombre de mesures observées dans un intervalle de 10 minutes. Ces mesures ne sont pas idéales pas idéales car il peut y avoir des variations de flux qui durent moins de dix minutes et que nous ne pourrons pas déceler. De plus, connaître la taille du signal lumineux d'une mesure (en comptages ADC ou millivolts) nous permet de distinguer les muons cosmiques du bruit de fond. Malgré ces défauts, la possibilité d'appliquer des critères de coïncidence permet d'obtenir un signal de muons cosmiques suffisament pur pour effectuer des mesures justes.
+Les résultats d'une prise de données sont fournis par l'unité centrale du détecteur CAEN sous forme de fichier {\tt *.csv}, le format de programmes tels que Excel ou Numbers. Un exemple est présenté sur la figure \ref{fig:PrisedonneeCAEN}. L'information est moins précise que celle du détecteur CosmicWatch : au lieu de rapporter chaque mesure avec ses propriétés, le détecteur CAEN n'affiche que le nombre de mesures observées dans un intervalle de 10 minutes. Ces mesures ne sont pas idéales pas idéales car il peut y avoir des variations de flux qui durent moins de dix minutes et que nous ne pourrons pas déceler. De plus, connaître la taille du signal lumineux d'une mesure (en comptages ADC ou millivolts) nous permet de distinguer les muons cosmiques du bruit de fond. Malgré ces défauts, la possibilité d'appliquer des critères de coïncidence permet d'obtenir un signal de muons cosmiques suffisamment pur pour effectuer des mesures justes.
 
 \begin{figure}[t]
 \begin{center}
@@ -405,7 +404,7 @@ Voici les informations fournies par le détecteur CAEN :
   \item L'humidité.
   \item L'altitude.
 \end{itemize}
-L'importance de la contrainte de coïncidence est bien visible en comparant les taux de comptage des scintillateurs individuels (colonne 7 et 8) avec celui de la coïncidence (colonne 10). La différence entre les taux de comptage des scintillateurs A et B est dûe aux différents seuils électroniques de discriminination appliqué au signal des SiPM (voir la section~\ref{sec:detecCosmic}). Le comptage supplémentaire du scintillateur B par rapport à A correspond principalement à du bruit de fond qui est éliminé par la contrainte de coïncidence.
+L'importance de la contrainte de coïncidence est bien visible en comparant les taux de comptage des scintillateurs individuels (colonne 7 et 8) avec celui de la coïncidence (colonne 10). La différence entre les taux de comptage des scintillateurs A et B est dûe aux différents seuils électroniques de discrimination appliqué au signal des SiPM (voir la section~\ref{sec:detecCosmic}). Le comptage supplémentaire du scintillateur B par rapport à A correspond principalement à du bruit de fond qui est éliminé par la contrainte de coïncidence.
 
 \subsection{Le bruit de fond}
 \subsubsection{L'origine du bruit de fond}
@@ -424,7 +423,7 @@ Le moyen le plus efficace pour supprimer les mesures dues au bruit de fond est l
 \end{center}
 \end{figure}
 
-Une autre méthode pour corriger les effets du bruit de fond, si l'on ne possède qu’un seul détecteur, serait de faire dans un premier temps des mesures avec le détecteur posé horizontalement puis posé au même endroit verticalement, comme on peut le voir sur la figure \ref{fig:hor.ver}. Lorsqu'il est posé horizontalement le détecteur va mesurer les rayons cosmiques et la radioactivité ambiante tandis que lorsqu'il est en position verticale, il va mesurer beaucoup moins de rayons cosmiques car la surface du scintillateur placée vers le haut est beaucoup moins importante. La plupart des mesures seront donc du bruit de fond. On pourra ensuite comparer les deux résultats et en déduire le taux du bruit de fond. Cette méthode est beaucoup moins précise que celle utilisant la coïncidence : tout d'abord car le taux de bruit de fond est supérieur à celui des rayons cosmiques - sa soustraction inflige une plus grande erreur statistique au résultat, voir le calcul à l'annexe~\ref{sec:sigma}. Mais également, comme nous allons voir dans la section~\ref{sec:TauxInclinaison}, car le taux de muons cosmiques n'est pas nul pour un détecteur positionné verticalement. Par conséquent, cette méthode rendrait une simple soustraction incorrecte, nécessitant l'injection de l'information \emph{a priori} sur la distribution angulaire des rayons cosmiques. Une troisième méthode que nous pourrions utiliser, supérieure à celle d'une simple soustraction mais tout de même inférieure au principe de coïncidence, serait l'exploitation de la différence des spectres ADC des rayons cosmiques et du bruit de fond, voir la section~\ref{sec:ADC}.
+Une autre méthode pour corriger les effets du bruit de fond, si l'on ne possède qu’un seul détecteur, serait de faire dans un premier temps des mesures avec le détecteur posé horizontalement puis posé au même endroit verticalement, comme on peut le voir sur la figure~\ref{fig:hor.ver}. Lorsqu'il est posé horizontalement le détecteur va mesurer les rayons cosmiques et la radioactivité ambiante tandis que lorsqu'il est en position verticale, il va mesurer beaucoup moins de rayons cosmiques car la surface du scintillateur placée vers le haut est beaucoup moins importante. La plupart des mesures seront donc du bruit de fond. On pourra ensuite comparer les deux résultats et en déduire le taux du bruit de fond. Cette méthode est beaucoup moins précise que celle utilisant la coïncidence : tout d'abord car le taux de bruit de fond est supérieur à celui des rayons cosmiques - sa soustraction inflige une plus grande erreur statistique au résultat, voir le calcul à l'annexe~\ref{sec:sigma}. Mais également, comme nous allons voir dans la section~\ref{sec:TauxInclinaison}, car le taux de muons cosmiques n'est pas nul pour un détecteur positionné verticalement. Par conséquent, cette méthode rendrait une simple soustraction incorrecte, nécessitant l'injection de l'information \emph{a priori} sur la distribution angulaire des rayons cosmiques. Une troisième méthode que nous pourrions utiliser, supérieure à celle d'une simple soustraction mais tout de même inférieure au principe de coïncidence, serait l'exploitation de la différence des spectres ADC des rayons cosmiques et du bruit de fond, voir la section~\ref{sec:ADC}.
 
 \begin{figure}[t]
 \begin{center}
@@ -433,9 +432,9 @@ Une autre méthode pour corriger les effets du bruit de fond, si l'on ne possèd
 \end{center}
 \end{figure}
 
-\subsubsection{Interview avec le physicien Sebastien Procureur concernant les questions de bruit de fond dans ScanPyramids}
+\subsubsection{Interview avec le physicien Sébastien Procureur concernant les questions de bruit de fond dans ScanPyramids}
 
-J'ai souhaité m'adresser à Sebastien Procureur, physicien nucléaire\footnote{\url{https://www.franceculture.fr/personne/sebastien-procureur}, consulté le 28 Mai 2020.} ayant travaillé sur l'expérience \emph{ScanPyramids} (experience présentée dans la section \ref{subsubsection:ScanPyramids}) afin d'en connaître d'avantage sur le bruit de fond.
+J'ai souhaité m'adresser à Sébastien Procureur, physicien nucléaire\footnote{\url{https://www.franceculture.fr/personne/sebastien-procureur}, consulté le 28 Mai 2020.} ayant travaillé sur l'expérience \emph{ScanPyramids} (expérience présentée dans la section \ref{subsubsection:ScanPyramids}) afin d'en connaître d'avantage sur le bruit de fond.
 
 L'une de mes principales interrogations était la suivante : « Comment vous êtes-vous assurés qu’il n’y ait pas d’effets systématiques sur vos mesures dûs à d’autres sources de particules chargées ? »
 
@@ -490,7 +489,7 @@ Maintenant, regardons les distributions de comptage ADC, représentées sur la f
 \end{center}
 \end{figure}
 
-La courbe noire étant le résultat des mesures du détecteur horizontal et la courbe rouge pointillée celles du détecteur posé verticalement, nous observons de nettes différences. Si nous regardons la courbe noire, nous notons qu'il y a deux maximums distincts. Le premier, entre un ADC de 60 à 100, n'a pas grand chose de particulier car la courbe rouge suit approximativement la même trajectoire; on peut en déduire que ce maximum n'est en fait que du bruit fond, car les deux détecteurs mesurent la même chose. Le deuxième maximum est plus significatif, car les deux distributions se distinguent nettement. Le maximum du détecteur horizontal est plus prononcé : il indique une prépondérance de muons cosmiques. Nous pouvons donc retenir que les muons cosmiques possèdent un comptage ADC d'à peu près 160 à 300. Les muons produisent alors plus de photons dans le SiPM que le bruit de fond, ils sont plus énergétiques. Une autre observation est particulièrementintéressante dans la figure \ref{fig:gADC1} : on remarque que la distribution du détecteur vertical compte plus d'évènements à grand comptage ADC que le détecteur horizontal. Quand un muon passe le scintillateur verticalement, il parcourt plus de trajet et produit donc plus de photons donnant un signal un comptage ADC plus grand.
+La courbe noire étant le résultat des mesures du détecteur horizontal et la courbe rouge pointillée celles du détecteur posé verticalement, nous observons de nettes différences. Si nous regardons la courbe noire, nous notons qu'il y a deux maximums distincts. Le premier, entre un ADC de 60 à 100, n'a pas grand chose de particulier car la courbe rouge suit approximativement la même trajectoire; on peut en déduire que ce maximum n'est en fait que du bruit fond, car les deux détecteurs mesurent la même chose. Le deuxième maximum est plus significatif, car les deux distributions se distinguent nettement. Le maximum du détecteur horizontal est plus prononcé : il indique une prépondérance de muons cosmiques. Nous pouvons donc retenir que les muons cosmiques possèdent un comptage ADC d'à peu près 160 à 300. Les muons produisent alors plus de photons dans le SiPM que le bruit de fond, ils sont plus énergétiques. Une autre observation est particulièrement intéressante dans la figure \ref{fig:gADC1} : on remarque que la distribution du détecteur vertical compte plus d'évènements à grand comptage ADC que le détecteur horizontal. Quand un muon passe le scintillateur verticalement, il parcourt plus de trajet et produit donc plus de photons donnant un signal un comptage ADC plus grand.
 
 \subsection{Mesure du taux en fonction de l'inclinaison}
 \label{sec:TauxInclinaison}
@@ -519,13 +518,13 @@ Il ne restait plus qu'à prendre des mesures et à les superposer sur ma courbe.
 \end{figure}
 
 
-Nous remarquons que la courbe rouge diffère de la courbe noire pointillée. Ceci est dû au fait que le détecteur CAEN possède un angle de vue maximal de 61$^{\circ}$ dans chaque côté. Le résultat de la mesure (courbe rouge et points de mesures) correspond alors à une convolution entre la distribution de l'angle d'incidence des muons (courbe noire pointillée) et l'angle de vue du détecteur. Par exemple, si le détecteur est positionné horizontalement, il ne mesure pas seulement les muons venant du zénith (angle d'incidence de 0$^{\circ}$) mais aussi les muons avec un certain angle incident. L'angle maximal de 61$^{\circ}$ ne peut être atteint que par des muons qui entrent au bout d'un détecteur, voir schéma \ref{fig:61degschema}. De la même manière, un ensemble de détecteurs, orientés verticalement, mesure des muons à partir d'incidence de 29$^{\circ}$. Cette réflexion est schématisée sur la figure \ref{fig:61degschema}. J'ai inclus cette convolution dans mon programme python de simulation. Cette convolution provoque une attération du résultat car nous observons des muons à 90$^{\circ}$. Afin d'éviter cela et de retrouver la distribution original des muons par la mesure, il faudrait, soit une grande distance entre les deux détecteurs en coïncidence, soit un ensemble de détecteurs posé sur une surface très petite. Dans les deux cas, le comptage serait très faible et demanderait de longues campagnes de mesures.
+Nous remarquons que la courbe rouge diffère de la courbe noire pointillée. Ceci est dû au fait que le détecteur CAEN possède un angle de vue maximal de 61$^{\circ}$ dans chaque côté. Le résultat de la mesure (courbe rouge et points de mesures) correspond alors à une convolution entre la distribution de l'angle d'incidence des muons (courbe noire pointillée) et l'angle de vue du détecteur. Par exemple, si le détecteur est positionné horizontalement, il ne mesure pas seulement les muons venant du zénith (angle d'incidence de 0$^{\circ}$) mais aussi les muons avec un certain angle incident. L'angle maximal de 61$^{\circ}$ ne peut être atteint que par des muons qui entrent au bout d'un détecteur, voir schéma \ref{fig:61degschema}. De la même manière, un ensemble de détecteurs, orientés verticalement, mesure des muons à partir d'incidence de 29$^{\circ}$. Cette réflexion est schématisée sur la figure \ref{fig:61degschema}. J'ai inclus cette convolution dans mon programme python de simulation. Cette convolution provoque une altération du résultat car nous observons des muons à 90$^{\circ}$. Afin d'éviter cela et de retrouver la distribution originale des muons par la mesure, il faudrait, soit une grande distance entre les deux détecteurs en coïncidence, soit un ensemble de détecteurs posé sur une surface très petite. Dans les deux cas, le comptage serait très faible et demanderait de longues campagnes de mesures.
 
-Nous observons un bon accord entre le résultat de la simulation en rouge et le résultat des mesures exception faite pour le point de mesure à 20$^{\circ}$. J'en déduis que ceci est dû à une approximation dans la simulation. En effet, j'ai supposé que les deux plaques des scintillateurs ont une épaisseur de 0 cm, alors qu'en réalité, leur épaisseur est de 2.5 cm. Cette épaisseur a pour effet d'agrandir encore plus l'angle de vue.
+Nous observons un bon accord entre le résultat de la simulation en rouge et le résultat des mesures exception faite pour le point de mesure à 20$^{\circ}$. J'en déduis que ceci est dû à une approximation dans la simulation. En effet, j'ai supposé que les deux plaques des scintillateurs ont une épaisseur de 0 cm, alors qu'en réalité, leur épaisseur est de 2.5$\;$cm. Cette épaisseur a pour effet d'agrandir encore plus l'angle de vue.
 
 \subsection{Mesure de la profondeur d'une grotte}
 
-J'ai cherché une grotte intéressante dans les alentours de Genève afin d'étudier l'absorption des muons dans la roche. La grotte d'Orjobet (voir la figure \ref{fig:GrotteOrjobet}\footnote{Figure de gauche : \url{http://www.collonges-sous-saleve.fr/patrimoine-et-environnement/patrimoine-culturel/}, consulté le 13 Août 2020}.) sur le Salève s'avérait parfaite pour mes mesures. Je m'y suis rendu pour réaliser 90 minutes de mesures à l'intérieur de la grotte et 20 minutes de mesures au sommet de la grotte avec l'ensemble de détecteurs CAEN. Grâce à des applications de mesure d'altitude, j'ai estimé la profondeur de la grotte (entre les deux points de mesure) comme étant $18\;\pm\;2\;{\rm m}$. La valeur centrale correspond à la moyenne des profondeurs évaluées avec les différentes applications et l'incertitude ($\pm\,$2) à leur dispersion. 
+J'ai cherché une grotte intéressante dans les alentours de Genève afin d'étudier l'absorption des muons dans la roche. La grotte d'Orjobet (voir la figure \ref{fig:GrotteOrjobet}\footnote{Figure de gauche : \url{http://www.collonges-sous-saleve.fr/patrimoine-et-environnement/patrimoine-culturel/}, consulté le 13 Août 2020}.) sur le Salève s'avérait parfaite pour mes mesures. Je m'y suis rendu pour réaliser 90 minutes de mesures à l'intérieur de la grotte et 20~minutes de mesures au sommet de la grotte avec l'ensemble de détecteurs CAEN. Grâce à des applications de mesure d'altitude, j'ai estimé la profondeur de la grotte (entre les deux points de mesure) comme étant $18\;\pm\;2\;{\rm m}$. La valeur centrale correspond à la moyenne des profondeurs évaluées avec les différentes applications et l'incertitude ($\pm\,$2) à leur dispersion. 
 
 \begin{figure}[t]
 \begin{center}
@@ -535,7 +534,7 @@ J'ai cherché une grotte intéressante dans les alentours de Genève afin d'étu
 \end{center}
 \end{figure}
 
-Le taux mesuré à l'extérieur de la grotte est de $\nu_{\rm ext}=2.99\pm0.05\;{\rm Hz}$ (l'incertitude est de l'ordre statistique). A l'intérieur de la grotte, nous observons un taux de $\nu_{\rm grotte}=0.206\pm0.006\;{\rm Hz}$. C'est à dire seulement 6.9\% des muons traversent la roche au-dessus de la grotte. La figure~\ref{fig:tauxrelatifparprofondeur} indique le taux relatif en fonction de la profondeur de la roche calcaire : 10.3\% des muons devraient traverser la distance de 18 mètres de roche calcaire. D'ou vient la différence avec la mesure ? Pourquoi prédisons-nous un taux rélatif plus élevé ? À noter que l'entrée de la grotte était très éloignée de l'emplacement de la mesure donc aucun mésuré ne peut provenir de l'entrée de la grotte.
+Le taux mesuré à l'extérieur de la grotte est de $\nu_{\rm ext}=2.99\pm0.05\;{\rm Hz}$ (l'incertitude est de l'ordre statistique). A l'intérieur de la grotte, nous observons un taux de $\nu_{\rm grotte}=0.206\pm0.006\;{\rm Hz}$. C'est à dire seulement 6.9\% des muons traversent la roche au-dessus de la grotte. La figure~\ref{fig:tauxrelatifparprofondeur} indique le taux relatif en fonction de la profondeur de la roche calcaire : 10.3\% des muons devraient traverser la distance de 18 mètres de roche calcaire. D'où vient la différence avec la mesure ? Pourquoi prédisons-nous un taux relatif plus élevé ? À noter que l'entrée de la grotte était très éloignée de l'emplacement de la mesure donc aucune mesure ne peut être faussée car aucun muon ne pourrait provenir de l'entrée de la grotte.
 
 \begin{figure}[t]
 \begin{center}
@@ -543,22 +542,22 @@ Le taux mesuré à l'extérieur de la grotte est de $\nu_{\rm ext}=2.99\pm0.05\;
 \caption{\label{fig:disingrotte} Schéma expliquant la différence de parcours des muons cosmiques en fonction de l'angle d'incidence.}
 \end{center}
 \end{figure}
-En réfléchissant, j'ai trouvé que nous n'avions pas tenu compte de tous les facteurs. La figure~\ref{fig:tauxrelatifparprofondeur} n'exprime que le taux relatif des muons verticaux. Mais dans la partie précédente, nous avions vu que les rayons cosmiques suivent une distribution $\propto {\rm cos}^2\theta$ par rapport à l'angle d'incidence $\theta$ des muons.  Certains muons ont donc un angle d'incidence différent à $0^{\circ}$. Dans ce cas, ils traversent une distance plus conséquente dans la roche, principe schématisé sur la figure \ref{fig:disingrotte}. Par exemple, un muon avec un angle d'incidence de $45^\circ$ traverse 25.5$\;$mètres de roche au lieu de 18$\;$mètres. Quand on prend en compte cet effet, on s'attend à ce que le taux des muons prédit à l'intérieur de la grotte diminue. 
+En réfléchissant, j'ai trouvé que nous n'avions pas tenu compte de tous les facteurs. La figure~\ref{fig:tauxrelatifparprofondeur} n'exprime que le taux relatif des muons verticaux. Mais dans la partie précédente, nous avions vu que les rayons cosmiques suivent une distribution $\propto {\rm cos}^2\theta$ par rapport à l'angle d'incidence $\theta$ des muons.  Certains muons ont donc un angle d'incidence différent à $0^{\circ}$. Dans ce cas, ils traversent une distance plus conséquente dans la roche, principe schématisé sur la figure~\ref{fig:disingrotte}. Par exemple, un muon avec un angle d'incidence de $45^\circ$ traverse 25.5$\;$mètres de roche au lieu de 18$\;$mètres. Quand on prend en compte cet effet, on s'attend à ce que le taux des muons prédit à l'intérieur de la grotte diminue. 
 
-Pour prendre en compte cet effet, nous utilisons la courbe rouge de la figure~\ref{fig:msim}. En l'intégrant par parties (intervalles), nous pouvons déterminer le pourcentage de rayons cosmiques possédant un certain interval d'angle d'incidence. Ceci nous permet de calculer le pourcentage de muons traversant la distance correspondant à l'interval d'angles considéré. Par exemple, 9\% des muons observés possèdent un angle d'incidence entre $0^\circ$ et $5^\circ$, et 31\% des muons ont un angle d'incidence plus petit que $17^\circ$. Ces derniers traversent une distance entre 18 et 19~mètres de roche calcaire. 
+Pour prendre en compte cet effet, nous utilisons la courbe rouge de la figure~\ref{fig:msim}. En l'intégrant par parties (intervalles), nous pouvons déterminer le pourcentage de rayons cosmiques possédant un certain intervalle d'angle d'incidence. Ceci nous permet de calculer le pourcentage de muons traversant la distance correspondant à l'intervalle d'angles considéré. Par exemple, 9\% des muons observés possèdent un angle d'incidence entre $0^\circ$ et $5^\circ$, et 31\% des muons ont un angle d'incidence plus petit que $17^\circ$. Ces derniers traversent une distance entre 18 et 19~mètres de roche calcaire. 
 
-Nous reprenons ensuite la figure \ref{fig:tauxrelatifparprofondeur} afin d'obtenir pour chaque interval d'angle d'incidence le pourcentage de muons qui passent la distance correspondant à l'angle. Par exemple, 14\% des muons passent à travers 19 mètres de roche; c'est-à-dire, 14\% des 31\% des muons avec un angle d'incidence plus petit que $17^\circ$ seront détectés à l'intérieur de la grotte. 
+Nous reprenons ensuite la figure~\ref{fig:tauxrelatifparprofondeur} afin d'obtenir pour chaque intervalle d'angle d'incidence le pourcentage de muons qui passent la distance correspondant à l'angle. Par exemple, 14\% des muons passent à travers 19 mètres de roche; c'est-à-dire, 14\% des 31\% des muons avec un angle d'incidence plus petit que $17^\circ$ seront détectés à l'intérieur de la grotte. 
 
-J'ai écrit un logiciel pour résoudre ce calcul de manière itérative utilisant l'expression suivante :
+J'ai écrit un programme pour résoudre ce calcul de manière itérative utilisant l'expression suivante :
 \begin{equation}
   \nu_{\rm grotte} = \nu_{\rm ext}\cdot \frac{1}{W}\sum_{i=1}^{n_{\rm int}}\nu_{\rm rel}(p_{\rm min}(\ell(\phi_i)))\cdot w(\phi_i)  
   \label{eq:calculgrotte}
 \end{equation}
-ou la somme itère sur $n_{\rm int}=180$ intervalles en angle d'incidence $\phi$ entre $\phi_1=0^\circ$, $\phi_2=0.5^\circ$, $\phi_3=1.0^\circ$, \dots, $\phi_{180}=90^\circ$, et la somme est normalisée par la somme des poids $W=\sum_{i=1}^{n_{\rm int}}w(\phi_i)$. Pour chaque itération $i$, la valeur du taux relatif $\nu_{\rm rel}$, obtenue à partir de $p_{\rm min}$ correspondant à la distance $\ell(\phi_i)$ que les muons avec l'angle $\phi_i$ parcourent dans la roche, est pondérée par le poids $w(\phi_i)$. Ce dernier est obtenu de la courbe rouge de la figure~\ref{fig:msim}. La valeur de $p_{\rm min}$ en fonction de la distance $\ell(\phi_i)$ est obtenue à l'aide de l'équation~\ref{eq:rochedroiteprojection} (voir également la figure~\ref{fig:BethePoints} à droite). Le nombre d'intervalles $n_{\rm int}$ est arbitraire mais doit être assez grand pour atteindre une précision suffisante sur $\nu_{\rm grotte}$. J'ai vérifié qu'en l'agrandissant au-delà de 180 la valeur de $\nu_{\rm grotte}$ reste stable. 
+ou la somme itère sur $n_{\rm int}=180$ intervalles en angle d'incidence $\phi$ entre $\phi_1=0^\circ$, $\phi_2=0.5^\circ$, $\phi_3=1.0^\circ$, \dots, $\phi_{180}=90^\circ$, et la somme est normalisée par la somme des poids $W=\sum_{i=1}^{n_{\rm int}}w(\phi_i)$. Pour chaque itération $i$, la valeur du taux relatif $\nu_{\rm rel}$, obtenue à partir de $p_{\rm min}$ correspondant à la distance $\ell(\phi_i)$ que les muons avec l'angle $\phi_i$ parcourent dans la roche, est pondérée par le poids $w(\phi_i)$. Ce dernier est obtenu à partir de la courbe rouge de la figure~\ref{fig:msim}. La valeur de $p_{\rm min}$ en fonction de la distance $\ell(\phi_i)$ est obtenue à l'aide de l'équation~\ref{eq:rochedroiteprojection} (voir également la figure~\ref{fig:BethePoints} à droite). Le nombre d'intervalles $n_{\rm int}$ est arbitraire mais doit être assez grand pour atteindre une précision suffisante sur $\nu_{\rm grotte}$. J'ai vérifié qu'en l'agrandissant au-delà de 180 la valeur de $\nu_{\rm grotte}$ reste stable. 
 
-L'équation~\ref{eq:calculgrotte} donne la prédiction $0.071\pm0.013$, c'est-à-dire $(7.1\pm1.3)$\% des muons traversent la grotte. L'erreur de 1.3\% exprime l'incertitude de 2~mètres que nous avions estimée sur la profondeur de la grotte. Ce résultat est en bon accord avec la mesure de 6.9\%.
+L'équation~\ref{eq:calculgrotte} donne par conséquent la prédiction $0.071\pm0.013$, c'est-à-dire $(7.1\pm1.3)$\% des muons traversent la grotte. L'erreur de 1.3\% exprime l'incertitude de 2~mètres que nous avions estimée sur la profondeur de la grotte. Ce résultat s'avère conforme à la mesure de 6.9\%.
 
-Nous avons donc mesuré et confirmé la profondeur de la grotte d'Orjobet grâce au rayons cosmiques.
+{\bf Nous avons donc mesuré et confirmé la profondeur de la grotte d'Orjobet grâce aux rayons cosmiques.}
 
 
 \subsection{Taux de rayons cosmiques dans l'atmosphère}
@@ -576,16 +575,16 @@ Nous avons donc mesuré et confirmé la profondeur de la grotte d'Orjobet grâce
 \end{center}
 \end{figure}
 
-J'ai ensuite réalisé plusieurs mesures à différentes altitudes, pour ajuster une courbe qui exprime le taux en fonction de l'altitude. Pour cela, je me suis rendu à Chamonix (ville à 1030 mètres au dessus du niveau de la mer) pour monter en télécabine sur le sommet de l'Aiguille du Midi culminant à 3790 mètres en passant par une station intermédiaire, le Plan de l'Aiguille, avec une altitude de 2317 mètres, en réalisant des mesures au trois endroits. J'ai aussi grimpé le sommet du Reculet qui culmine à 1719 mètres, et j'ai finalement réalisé des mesures à Genève, à 413 mètres. Quelques photos de prises de mesure sont montrées sur la figure~\ref{fig:photos-caenair}.
+J'ai ensuite réalisé plusieurs mesures à différentes altitudes, pour ajuster une courbe qui exprime le taux en fonction de l'altitude. Pour cela, je me suis rendu à Chamonix (ville à 1030~mètres au dessus du niveau de la mer) pour monter en télécabine sur le sommet de l'Aiguille du Midi culminant à 3790~mètres en passant par une station intermédiaire, le Plan de l'Aiguille, avec une altitude de 2317~mètres. J'ai réalisé des mesures aux trois endroits. J'ai aussi grimpé le sommet du Reculet qui culmine à 1719~mètres. Pour finir, j'ai réalisé des mesures à Genève, à 413~mètres. Quelques photos de prises de mesure sont montrées sur la figure~\ref{fig:photos-caenair}.
 
-Ensuite, avec ces cinq points j'ai ajusté une fonction qui exprime le taux en fonction de l'altitude, $h$, présenté sur la figure \ref{fig:CAENair-figure}, voici l'expression algébrique de la fonction :
+Ensuite, avec ces cinq points j'ai ajusté une fonction qui exprime le taux par rapport à l'altitude, $h$, présenté sur la figure \ref{fig:CAENair-figure}, voici l'expression algébrique de la fonction :
 
 \begin{equation}
 \nu(h) = p_1\cdot e^{p_2  h} +  p_0
 \end{equation}
 avec les coefficients $p_0=1.06$, $p_1=1.09$ et $p_2=4.57\cdot 10^{-4}$. Le choix de la fonction exponentielle est motivé par l'équation~\ref{eq:decay} afin de tenir compte du fait que les muons se désintègrent au court de leur voyage à travers l'atmosphère.
 
-Grâce à cette fonction nous pouvons prédire que si nous observons par exemple un taux de 4 Hz, nous nous trouvons à une altitude de 2200 mètres.
+Grâce à cette fonction nous pouvons prédire que si nous observons par exemple un taux de 4$\;$Hz, nous nous trouvons à une altitude de 2200~mètres.
 
 \subsection{Applications de la radiographie terrestre avec les rayons cosmiques}
 
@@ -602,27 +601,27 @@ Le 21 Décembre 2017, l'expérience \emph{ScanPyramids} affirme avoir découvert
 \end{figure}
 
 
-L'article publié dans le magazine Nature\footnote{Kunihiro Morishima, Discovery of a big void in Khufu’s Pyramid by observation of cosmic-ray muons, \url{https://www.nature.com/articles/nature24647}, consulté le 28 Mai 2020.} nous indique que les auteurs ont utilisé la radiographie à rayons cosmiques pour trouver les indices de cette chambre. « C'est une des meilleures techniques qui permet de visualiser des vides connus et inconnus de la pyramide de manière non invasive ».\footnote{Kunihiro Morishima \emph{et al.} Discovery of a big void in Khufu's Pyramid by observation of cosmic-ray muons, \url{http://www.hip.institute/press}, consulté le 26 Mai 2020. Traduit de l'anglais.} Similaire à la radiographie du corps humain dans un tomophraphe par ordinateur, la tomographie de la pyramide doit être faite couche par couche dans différentes directions. Les spectres d'absorptions ainsi mesurés, dont chacun rend une image deux dimensionnelle, sont ensuite superposés pour former une image trois dimensionelle. 
+L'article publié dans le magazine Nature\footnote{Kunihiro Morishima, Discovery of a big void in Khufu’s Pyramid by observation of cosmic-ray muons, \url{https://www.nature.com/articles/nature24647}, consulté le 28 Mai 2020.} nous indique que les auteurs ont utilisé la radiographie à rayons cosmiques pour trouver les indices de cette chambre. « C'est une des meilleures techniques qui permet de visualiser des vides connus et inconnus de la pyramide de manière non invasive ».\footnote{Kunihiro Morishima \emph{et al.} Discovery of a big void in Khufu's Pyramid by observation of cosmic-ray muons, \url{http://www.hip.institute/press}, consulté le 26 Mai 2020. Traduit de l'anglais.} Similaire à la radiographie du corps humain dans un tomoghraphe par ordinateur, la tomographie de la pyramide doit être faite couche par couche dans différentes directions. Les spectres d'absorption ainsi mesurés, dont chacun rend une image bidimensionnelle, sont ensuite superposés pour former une image tridimensionnelle. 
 
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=\textwidth]{Figures/GScanPyramidsScintilator.pdf}
-\caption{\label{fig:GScanPyramidsScintilator} Figure de gauche : Tracés 2D de l'angle détecté des muons après normalisation par simulation avec des structures internes. À droite : Histogramme normalisé représentant le taux de rayons cosmiques mesuré comparé à celui attendu (traitillés horizontals).}
+\caption{\label{fig:GScanPyramidsScintilator} Figure de gauche : tracés 2D de l'angle détecté des muons après normalisation par simulation avec des structures internes. À droite : histogramme normalisé représentant le taux de rayons cosmiques mesuré comparé à celui attendu (traitillés horizontaux).}
 \end{center}
 \end{figure}
 
 Nous apprennons dans l'article l'application de trois méthodes différentes pour mesurer le taux de muons cosmiques :
 \begin{itemize}
   \item Des films d'émulsion nucléaire. « Une émulsion nucléaire est [un] film photographique très sensible utilisé pour la détection de la trajectoire tridimensionnelle de particules chargées telles que les muons ».\footnote{Kunihiro Morishima, Development of nuclear emulsion for muography, \url{https://www.annalsofgeophysics.eu/index.php/annals/article/view/7387}, consulté le 26 Mai 2020. Traduit de l'anglais.}
-  \item Des détecteur à scintillateur composés de quatre couches de scintillateurs, similaires aux détecteurs que j'ai utilisés.
+  \item Des détecteurs à scintillateur composés de quatre couches de scintillateurs, similaires aux détecteurs que j'ai utilisés.
   \item Des détecteurs à gaz (ou « Micromégas »), « En traversant le détecteur, un muon arrache quelques électrons au gaz du premier volume [...] [il va ensuite passer dans plusieurs volumes différents ce qui]  résulte en une avalanche de quelques dizaines de milliers d'électrons permettant aux pistes de l’électrode de lecture la détection du signal amplifié ».\footnote{\url{https://www.laradioactivite.com/site/pages/Technique_Muographique.htm}, consulté le 26 Mai 2020.}
 \end{itemize}
 
-Les chercheurs de \emph{ScanPyramids} ont trouvé des résultats cohérents entre les trois mesures différentes, corroborant ainsi leurs conclusions et leur permettant de déduire avec certitude qu'il existait bien un vide, c'est à dire une chambre secrète dans la pyramide de Kheops.
+Les chercheurs de \emph{ScanPyramids} ont trouvé des résultats cohérents entre les trois mesures différentes, corroborant ainsi leurs conclusions et leur permettant de déduire avec certitude qu'il existait bien un vide, c'est-à-dire une chambre secrète dans la pyramide de Kheops.
 
 Regardons les graphiques qu'ils ont faits avec les scintillateurs, présentés sur la figure~\ref{fig:GScanPyramidsScintilator}\footnote{Ces deux graphiques proviennent de l'article scientifique de Kunihiro Morishima \emph{et al.} Discovery of a big void in Khufu's Pyramid by observation of cosmic-ray muons, \url{http://www.hip.institute/press}, consulté le 26 Mai 2020.}. Celui de gauche nous montre l'endroit en coordonées $\Delta x$ et $\Delta y$ (en mètres), définis à partir du centre de la pyramide, où se trouve cette mystérieuse chambre. La figure de droite nous indique pour une couche $\Delta y$ donnée un excès de muons comparé au taux attendu à la position $\Delta x$ de la chambre.
 
-Cette découverte a été réalisé grâce à la radiographie terrestre avec les muons cosmiques.
+Cette découverte a été réalisée grâce à la radiographie terrestre incluant les muons cosmiques.
 
 \subsubsection{En volcanologie}
 
@@ -634,18 +633,18 @@ Cette découverte a été réalisé grâce à la radiographie terrestre avec les
 \end{center}
 \end{figure}
 
-Le premier septembre 2004, un volcan au Japon, le Mont Asama (2338 mètres d'altitude\footnote{H.K.M Tanaka, Development of an emulsion imaging system for cosmic-ray myon radiography to explore the internal structure of a volcan, Mt. Asama, \url{http://www.eri.u-tokyo.ac.jp/people/ht/nim2007.pdf}, consulté le 26 Mai 2020.}), (Figure \ref{fig:Asama}\footnote{Figure de gauche : \url{https://enacademic.com/dic.nsf/enwiki/478814}, consulté le 17 Octobre 2020. Figure de droite : \url{http://www.vulkaner.no/v/volcan/asama-e.html}, consulté le 17 Octobre 2020.}) est entré en éruption\footnote{\url{https://earthobservatory.nasa.gov/images/4838/mt-asama-erupts}, consulté le 28 Mai 2020.}. Par la suite, des radar AirSARs (« outils d'imagerie capables de pénétrer à travers les nuages et de collecter des données la nuit »\footnote{\url{https://airsar.jpl.nasa.gov}, consulté le 28 Mai 2020. Traduit de l'anglais.} ont découvert qu'un « monticule de lave en forme de crêpe s'était formé sur le fond du cratère ».\footnote{H.K.M Tanaka, Development of an emulsion imaging system for cosmic-ray myon radiography to explore the internal structure of a volcan, Mt. Asama, \url{http://www.eri.u-tokyo.ac.jp/people/ht/nim2007.pdf}, consulté le 26 Mai 2020. Traduit de l'anglais.} Suite à cette découverte, des physiciens japonais ont lancé une expérience ayant pour but de « confirmer la position du cratère au sommet du volcan [...] et de mesurer la densité absolue du monticule de lave en forme de crêpe dans le cratère »\footnote{\emph{id.}} en utilisant la tomographie à base de rayons cosmiques. L'experience fût réussie car la reconstruction graphique du monticule de lave et du volcan a pu être réalisée.\footnote{\emph{id.}}
+Le premier septembre 2004, un volcan au Japon, le Mont Asama (2338 mètres d'altitude\footnote{H.K.M Tanaka, Development of an emulsion imaging system for cosmic-ray myon radiography to explore the internal structure of a volcan, Mt. Asama, \url{http://www.eri.u-tokyo.ac.jp/people/ht/nim2007.pdf}, consulté le 26 Mai 2020.}), (Figure \ref{fig:Asama}\footnote{Figure de gauche : \url{https://enacademic.com/dic.nsf/enwiki/478814}, consulté le 17 Octobre 2020. Figure de droite : \url{http://www.vulkaner.no/v/volcan/asama-e.html}, consulté le 17 Octobre 2020.}) est entré en éruption\footnote{\url{https://earthobservatory.nasa.gov/images/4838/mt-asama-erupts}, consulté le 28 Mai 2020.}. Par la suite, des radars AirSARs (« outils d'imagerie capables de pénétrer à travers les nuages et de collecter des données la nuit »\footnote{\url{https://airsar.jpl.nasa.gov}, consulté le 28 Mai 2020. Traduit de l'anglais.} ont découvert qu'un « monticule de lave en forme de crêpe s'était formé sur le fond du cratère ».\footnote{H.K.M Tanaka, Development of an emulsion imaging system for cosmic-ray myon radiography to explore the internal structure of a volcan, Mt. Asama, \url{http://www.eri.u-tokyo.ac.jp/people/ht/nim2007.pdf}, consulté le 26 Mai 2020. Traduit de l'anglais.} Suite à cette découverte, des physiciens japonais ont lancé une expérience ayant pour but de « confirmer la position du cratère au sommet du volcan [...] et de mesurer la densité absolue du monticule de lave en forme de crêpe dans le cratère »\footnote{\emph{id.}} en utilisant la tomographie à base de rayons cosmiques. L'expérience fut réussie car la reconstruction graphique du monticule de lave et du volcan a pu être réalisée.\footnote{\emph{id.}}
 
 
 \pagebreak
 
 \section{Conclusion}
 
-Dans ce travail de maturité, j'ai développé et décrit la mesure et l'utilisation de rayons cosmiques sur terre. Depuis leur découverte en 1912 ces rayons ont étés le sujet d'intenses recherches pour la physique fondamentale. Dans mon travail, je me suis concentré sur l'application des muons cosmiques. Ces muons sont des particules secondaires produites dans les collisions de rayons cosmiques primaires venant de l'espace avec les hautes couches de l'atmosphère. Grâce aux effets relativistes, ces muons qui ne vivent que deux microsecondes au repos réussissent à traverser les 15 kilomètre d'atmosphère pour atteindre nos détecteur à la surface terrestre. Une autre proprièté est nécéssaire pour cela : grâce à leur masse de deux cents fois celle des électrons, les muons perdent beaucoup moins d'énergie en traversant la matière, leur permettant de pénétrer l'atmosphère et même des dizaines de mètres de roche. Ces deux propriètées, effet relativiste et grande masse, font des muons des sondes idéales pour étudier la tomographie terrestre. 
+Dans ce travail de maturité, j'ai développé et décrit la mesure et l'utilisation de rayons cosmiques sur terre. Depuis leur découverte en 1912, ces rayons ont étés le sujet d'intenses recherches pour la physique fondamentale. Dans mon travail, je me suis concentré sur l'application des muons cosmiques. Ces muons sont des particules secondaires produites dans les collisions de rayons cosmiques primaires venant de l'espace avec les hautes couches de l'atmosphère. Grâce aux effets relativistes, ces muons qui ne vivent que deux microsecondes au repos réussissent à traverser les 15 kilomètres d'atmosphère pour atteindre nos détecteurs à la surface terrestre. Une autre propriété est nécessaire pour cela : grâce à leur masse de deux cents fois celle des électrons, les muons perdent beaucoup moins d'énergie en traversant la matière, leur permettant de pénétrer l'atmosphère et même des dizaines de mètres de roche. Ces deux propriétés, effet relativiste et grande masse, font des muons des sondes idéales pour étudier la tomographie terrestre. 
 
-Grâce à des détecteurs à scintillateurs mis en coïncidence pour supprimer le bruit de fond de la radioactivité ambiante et permettre une mesure directionnée, j'ai déterminé dans ce travail les taux de muons sous différentes condition dans l'air et sous la terre. J'ai comparé mes observations avec des attentes théoriques utilisant le spectre d'impulsion attendu des muons cosmiques et leur perte d'énergie par interaction avec la matière décrite par l'équation de Bethe. Les calculs nécessaires ont été effectués par des logiciels informatiques que j'ai dévéloppés en language python. Les codes sources sont accessibles publiquement sur github. J'ai également dévloppé des notions statistiques pour estimer les significances et les incertitudes de mes mesures basées sur un comptage d'événement. J'ai conclu ce texte en donnant deux exemples d'application proffesionnels de radiographie terrestre avec les muons cosmiques.
+Grâce à des détecteurs à scintillateurs mis en coïncidence pour supprimer le bruit de fond de la radioactivité ambiante et permettre une mesure directionnée, j'ai déterminé dans ce travail les taux de muons sous différentes condition dans l'air et sous la terre. J'ai comparé mes observations avec des attentes théoriques utilisant le spectre d'impulsion attendu des muons cosmiques et leur perte d'énergie par interaction avec la matière décrite par l'équation de Bethe. Les calculs nécessaires ont été effectués par des logiciels informatiques que j'ai développés en langage python. Les codes sources sont accessibles publiquement sur GitHub. J'ai également utilisé des notions statistiques pour estimer les résultats fiables et les incertitudes de mes mesures basées sur un comptage d'événement. J'ai conclu ce texte en donnant deux exemples d'application professionnelles de radiographie terrestre avec les muons cosmiques.
 
-Ce travail intéréssant m'a permis de conjointement dévlopper un thème théorique de physique fondamentale et une application technique. La réalisation d'une mesure demande une compréhension du fonctionnement d'un détecteur, de la technique de mesure, la maitrise du bruit de fond et l'analyse des données prises par des outils informatiques et mathématiques. Ce travail m'a donné envie d'approfondir le côté scientifique des études de rayons cosmiques en tant que messagers de physique de l'univers.
+Cette étude m'a permis de mener un projet qui me tenais à cœur : travailler conjointement sur un sujet théorique de physique fondamentale et sur une application technique. La réalisation d'une mesure demande une compréhension du fonctionnement d'un détecteur, de la technique de mesure, la maîtrise du bruit de fond et l'analyse des données prises par des outils informatiques et mathématiques. Ce travail m'a donné envie d'approfondir l'étude scientifique des rayons cosmiques en tant que messagers de physique de l'univers.
 
 
 
@@ -656,7 +655,7 @@ Ce travail intéréssant m'a permis de conjointement dévlopper un thème théor
 \subsection{Démonstration: La vitesse d'un muon cosmique}
 \label{annexe 1}
 
-Nous allons, dans ce qui suit, déterminer pourquoi un muon possèdant une impulsion de $6\;$GeV/$c$ se déplace à une vitesse presque égale à celle de la lumière. Il faut commencer par reprendre la formule~\ref{eq:momentum} en remplaçant $c$ par $v$, la vitesse :
+Nous allons, dans ce qui suit, déterminer pourquoi un muon possédant une impulsion de $6\;$GeV/$c$ se déplace à une vitesse presque égale à celle de la lumière. Il faut commencer par reprendre la formule~\ref{eq:momentum} en remplaçant $c$ par $v$, la vitesse :
 \begin{equation}
 p = \gamma mv \label{eq:pmomentum}
 \end{equation}
@@ -681,7 +680,7 @@ L'équation \ref{eq:vannexe1} résulte dans une vitesse du muon de 299746563$\;{
 \begin{equation}
 \frac{v}{c} = \frac{299746563}{299792458} = 99.98\% \label{eq:v/c}
 \end{equation}
-En comparaison, un muon de 1$\;$Gev/$c$ atteint 99.43\% de la vitesse de la lumière. Nous pouvons donc utiliser pendant tout ce travail de maturité la vitesse de la lumière lorsqu'on parle de la vitesse d'un muon. 
+En comparaison, un muon de 1$\;$GeV/$c$ atteint 99.43\% de la vitesse de la lumière. Nous pouvons donc utiliser pendant tout ce travail de maturité la vitesse de la lumière lorsqu'on parle de la vitesse d'un muon. 
 
 \subsection{Démonstration : Le facteur de Lorentz}
 \label{annexes 2}
@@ -699,7 +698,7 @@ Voici la démonstration assez simple du facteur gamma selon le livre \emph{Under
 \end{center}
 \end{figure}
 
-Sur la figure \ref{fig:SSgamma} nous observons que les rectangles blancs montrent la lumière traversant un tube (le cylindre vert). Si le tube n'était pas en mouvement, la lumière atteindrait le bout du tube (la distance $l$) en temps $t$, avec $l = ct$. Cependant le tube bouge horizontalement à une vitesse $v$ très élevée. La lumière suit donc un chemin diagonal $d$, équivalent au trait rouge, avec $d = ct'$. Puisque $d>l$, mais $c$ constant, $t$ sera différent de $t'$. Le temps dépend donc du système référentiel et donc de l'espace. Suivant le théorème de pythagore, nous obtenons la relation :
+Sur la figure \ref{fig:SSgamma} nous observons que les rectangles blancs montrent la lumière traversant un tube (le cylindre vert). Si le tube n'était pas en mouvement, la lumière atteindrait le bout du tube (la distance $l$) en temps $t$, avec $l = ct$. Cependant le tube bouge horizontalement à une vitesse $v$ très élevée. La lumière suit donc un chemin diagonal $d$, équivalent au trait rouge, avec $d = ct'$. Puisque $d>l$, mais $c$ constant, $t$ sera différent de $t'$. Le temps dépend donc du système référentiel et donc de l'espace. Suivant le théorème de Pythagore, nous obtenons la relation :
 
 \begin{equation}
 d^2 = (vt')^2 +  l^2 \label{eq:gammaA}
@@ -716,12 +715,12 @@ Puis, divisons le tout par $t$, nous trouvons l'expression du facteur gamma :
 \begin{equation}
 \gamma = \frac{t'}{t} = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}} \label{eq:gammaF}
 \end{equation}
-Vu au repos, on observe le temps d'un corps en mouvement ralenti par $\gamma$. C'est à dire, vu de la terre, un muon se déplaçant à presque la vitesse de la lumière a une durée de vie allongée car son temps est ralenti. 
+Vu au repos, on observe le temps d'un corps en mouvement ralenti par $\gamma$. C'est-à-dire, vu de la terre, un muon se déplaçant à presque la vitesse de la lumière a une durée de vie allongée car son temps est ralenti. 
 
 \subsection{Considérations statistiques sur la précision des mesures}
 \label{sec:sigma}
 
-Dans la section \ref{sec:bdfcs}, nous avons déclaré que la soustraction du bruit de fond à partir des mesures du détecteur posé verticalement inflige une grande erreur statistique au résultat. Pour démontrer cette affirmation, nous supposons que le détecteur horizontal mesure $N_{\rm hor}$ coups qui correspondent à la somme des muons cosmiques ($N_\mu$) et du bruit de fond ($N_{\rm bdf}$). Nous supposons en outre que le détecteur posé verticalement mesure uniquement du bruit de fond, c'est-à-dire $N_{\rm ver} \approx N_{\rm bdf}$. Comme nous l'avons indiqué précédemment ceci n'est pas tout à fait exact puisque $N_{\rm ver}$ contient également quelques muons cosmiques. Avec cette aproximation, nous obtenons le nombre de muons cosmiques par la relation $N_\mu \approx N_{\rm hor} - N_{\rm ver}$.
+Dans la section \ref{sec:bdfcs}, nous avons déclaré que la soustraction du bruit de fond à partir des mesures du détecteur posé verticalement inflige une grande erreur statistique au résultat. Pour démontrer cette affirmation, nous supposons que le détecteur horizontal mesure $N_{\rm hor}$ coups qui correspondent à la somme des muons cosmiques ($N_\mu$) et du bruit de fond ($N_{\rm bdf}$). Nous supposons en outre que le détecteur posé verticalement mesure uniquement du bruit de fond, c'est-à-dire $N_{\rm ver} \approx N_{\rm bdf}$. Comme nous l'avons indiqué précédemment ceci n'est pas tout à fait exact puisque $N_{\rm ver}$ contient également quelques muons cosmiques. Avec cette approximation nous obtenons le nombre de muons cosmiques par la relation $N_\mu \approx N_{\rm hor} - N_{\rm ver}$.
 
 Afin d'estimer la marge d'erreur statistique de notre mesure $N_\mu$, nous exploitons la relation statistique\footnote{REFFFFFFFF}
 \begin{equation}
@@ -737,22 +736,23 @@ Avec le détecteur CosmicWatch nous observons le rapport $N_{\rm ver} \approx \f
 Si nous utilisons le principe de coïncidence, la mesure sera plus précise car nous aurons supprimé le bruit de fond lors de la mesure même, ne nécessitant aucune soustraction. La marge d'erreur est donc directement obtenue par la racine du nombre de muons cosmiques observés. Pour notre exemple ci-dessus nous trouverons $\sqrt{N_\mu} = \sqrt{25} = 5$, c'est-à-dire une mesure de $N_\mu = 25 \pm 5$.
 
 \subsection{Calcul : différence entre le flux de photons de lumière émis par le soleil et celui des muons cosmiques passant par le scintillateur}
+\label{sec:annexe-differenceinflux}
 
-Il est impératif de récouvrir les scintillateurs de ruban adhésif noir afin qu'aucune lumière ne pénètre dans les détecteurs, car le nombre de photons de lumière provenant du soleil est très largement supérieur à celui émis par les muons cosmiques traversant les détecteurs comme nous allons démontrer dans la suite. 
+Il est impératif de recouvrir les scintillateurs de ruban adhésif noir afin qu'aucune lumière ne pénètre dans les détecteurs, car le nombre de photons de lumière provenant du soleil est très largement supérieur à celui émis par les muons cosmiques traversant les détecteurs comme nous allons le démontrer par la suite. 
 
 Selon nos mesures, nous observons un taux de muons d'environ 0.25~Hz par 25~cm$^2$ (la surface du détecteur CosmicWatch) et chaque muon produit en moyenne un photon lorsqu'il traverse le scintillateur.\footnote{Lise Germon \emph{et al.} Les Muons et la Profondeur d'une cave, \url{http://www.vaucanson.org/php5/Accueil/index.php/muons-et-profondeur-d-une-cave}, consulté le 20 Avril 2020.} 
 
-Quel est le taux de photons de lumière émis par le soleil sur la même surface ? « La puissance lumineuse de la lumière naturelle du soleil à la surface de la terre au zénith est de $1360\;$W au mètre carré »,\footnote{Test de Physique sur les Ondes, École Moser, novembre 2019.} c'est-à-dire une puissance de $P=25\cdot10^{-4}\cdot1360\;{\rm W}=3.4\;$W sur la surface du détecteur CosmicWatch. Nous pouvons calculer l'énergie fournie par la puissance appliquée lors d'un interval en temps $t$ par la relation\footnote{Formulaire et Tables, Commissions romandes, de mathématiques de physique et de chimie, p. 133} 
+Quel est le taux de photons de lumière émis par le soleil sur la même surface ? « La puissance lumineuse de la lumière naturelle du soleil à la surface de la terre au zénith est de $1360\;$W au mètre carré »,\footnote{Test de Physique sur les Ondes, École Moser, novembre 2019.} c'est-à-dire une puissance de $P=25\cdot10^{-4}\cdot1360\;{\rm W}=3.4\;$W sur la surface du détecteur CosmicWatch. Nous pouvons calculer l'énergie fournie par la puissance appliquée lors d'un intervalle en temps $t$ par la relation\footnote{Formulaire et Tables, Commissions romandes, de mathématiques de physique et de chimie, p. 133} 
 \begin{equation}
 E = Pt \label{eq:energiepuissance}\,.
 \end{equation}
-Afin de savoir à combien de photons cette énergie correspond, nous devons connaîitre l'énergie d'un photon de lumière d'une longeur d'onde moyenne de $\lambda = 600\cdot10^{-9}$~m, que nous trouvons par la relation\footnote{Formulaire et Tables, Commissions romandes de mathématiques, de physique et de chimie, p. 155, 161} : 
+Afin de savoir à combien de photons cette énergie correspond, nous devons connaître l'énergie d'un photon de lumière d'une longueur d'onde moyenne de $\lambda = 600\cdot10^{-9}$~m, que nous trouvons par la relation\footnote{Formulaire et Tables, Commissions romandes de mathématiques, de physique et de chimie, p. 155, 161} : 
 \begin{equation}
 E =\frac{hc}{\lambda} = 3.3\cdot10^{-19}\;{\rm J}\,,
 \end{equation}
-ou nous avons utilisé\footnote{pDGGGGGGGGGGg} $h\simeq6.6\cdot10^{-34}$~Js et $c$ est la vitesse de la lumière. Le nombre de photons par seconde est donc  $3.4\;{\rm Ws}/3.3\cdot10^{-19}\;{\rm J}\approx10^{19}$ (voir que l'unité Watt fois seconde correspond à Joule).
+où nous avons utilisé\footnote{pDGGGGGGGGGGg} $h\simeq6.6\cdot10^{-34}$~Js et $c$ est la vitesse de la lumière. Le nombre de photons par seconde est donc  $3.4\;{\rm Ws}/3.3\cdot10^{-19}\;{\rm J}\approx10^{19}$ (voir que l'unité Watt fois seconde correspond à Joule).
 
-Le soleil émet $4\cdot10^{19}$ plus de photons par secondes sur une surface que les rayons cosmiques dans un scientillateur de la même surface. 
+Le soleil émet $4\cdot10^{19}$ plus de photons par seconde sur une surface que les rayons cosmiques dans un scintillateur de la même surface. 
 
 
 \pagebreak
@@ -788,7 +788,7 @@ Le soleil émet $4\cdot10^{19}$ plus de photons par secondes sur une surface que
 
 \subsection{Interview}
 
-  \item PROCUREUR Sebastien, Physicien nucléaire, Responsable scientifique à l'Irfu, 25 Mai 2020.
+  \item PROCUREUR Sébastien, Physicien nucléaire, Responsable scientifique à l'Irfu, 25 Mai 2020.
 
 
 \subsection{Sources bibliographiques}
